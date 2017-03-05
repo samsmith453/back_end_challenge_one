@@ -28,7 +28,7 @@ app.get("/:date", function(req, res){
             "unix": now.getTime(),
             "human": strftime('%o %B %Y', now)
         }
-        res.send(obj)
+        res.send(obj);
     }
     
     res.end();
