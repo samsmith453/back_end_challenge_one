@@ -36,6 +36,6 @@ app.get("/:date", function(req, res){
 
 app.use(express.static("public"));
 
-app.listen(8080, function(){
+app.listen(process.env.PORT || <default port>, function(){
     console.log("Connected");
 });
