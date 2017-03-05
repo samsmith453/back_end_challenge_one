@@ -36,6 +36,6 @@ app.get("/:date", function(req, res){
 
 app.use(express.static("public"));
 
-app.listen(process.env.PORT || <default port>, function(){
+app.listen(process.env.PORT, function(){
     console.log("Connected");
 });
